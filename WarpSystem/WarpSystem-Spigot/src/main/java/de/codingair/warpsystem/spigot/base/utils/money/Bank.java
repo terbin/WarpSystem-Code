@@ -48,7 +48,7 @@ public class Bank {
 
     public static void deposit(Player player, double amount) {
         if (!isReady()) return;
-        adapter().withdraw(player, amount);
+        adapter().deposit(player, amount);
     }
 
     public static Adapter adapter() {
